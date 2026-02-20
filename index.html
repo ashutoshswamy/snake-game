@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Snake</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hud">
+        <div class="title">Classic Snake</div>
+        <div class="score">Score: <span id="score">0</span></div>
+        <div class="status" id="status">Press Space or Tap Start</div>
+      </header>
+
+      <section class="board-wrap">
+        <div id="board" class="board" aria-label="Snake game board" role="grid"></div>
+      </section>
+
+      <section class="controls">
+        <button id="startBtn" class="btn">Start</button>
+        <button id="restartBtn" class="btn">Restart</button>
+      </section>
+
+      <section class="dpad" aria-label="On-screen controls">
+        <button class="btn" data-dir="up" aria-label="Move up">▲</button>
+        <div class="dpad-row">
+          <button class="btn" data-dir="left" aria-label="Move left">◀</button>
+          <button class="btn" data-dir="down" aria-label="Move down">▼</button>
+          <button class="btn" data-dir="right" aria-label="Move right">▶</button>
+        </div>
+      </section>
+
+      <footer class="help">
+        Controls: Arrow keys or WASD. Space pauses. Enter restarts after game over.
+      </footer>
+
+      <footer class="credits">
+        <span>Developer: Ashutosh Swamy</span>
+        <div class="links">
+          <a href="https://github.com/ashutoshswamy" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/ashutoshswamy" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://ashutoshswamy.in" target="_blank" rel="noreferrer">Portfolio</a>
+        </div>
+      </footer>
+    </main>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
